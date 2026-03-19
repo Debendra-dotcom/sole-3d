@@ -16,24 +16,24 @@ import * as THREE from 'three'
 
 // ── Desktop keyframes ─────────────────────────────────────────
 const KF_DESKTOP = [
-  { rx:0.00, ry:0.18, rz:0.00, px: 0.52, py:-0.04, sc:1.05, cz:3.50 },
-  { rx:0.12, ry:2.70, rz:0.06, px:-0.62, py: 0.02, sc:1.12, cz:3.40 },
-  { rx:1.48, ry:0.25, rz:0.00, px: 0.00, py:-0.18, sc:1.18, cz:3.10 },
-  { rx:-0.10,ry:-0.85,rz:-0.05,px: 0.62, py: 0.02, sc:1.12, cz:3.40 },
-  { rx:0.20, ry:3.90, rz:0.07, px:-0.28, py: 0.10, sc:1.60, cz:2.90 },
-  { rx:0.15, ry:5.30, rz:-0.04,px: 0.88, py: 0.48, sc:0.68, cz:4.20 },
-  { rx:0.10, ry:6.50, rz:0.00, px:-1.10, py:-0.55, sc:0.72, cz:4.00 },
+  { rx:0.00, ry:0.18, rz:0.00, px: 0.52, py:-0.04, sc:1.05, cz:3.50 },  // 0 HERO
+  { rx:0.12, ry:2.70, rz:0.06, px:-0.62, py: 0.02, sc:1.12, cz:3.40 },  // 1 HEEL  ← left
+  { rx:1.48, ry:0.25, rz:0.00, px: 0.00, py:-0.18, sc:1.18, cz:3.10 },  // 2 SOLE  top-down
+  { rx:-0.10,ry:-0.85,rz:-0.05,px:-0.55, py: 0.00, sc:1.60, cz:3.00 },  // 3 FRONT ← left, sc matches scene4
+  { rx:0.20, ry:3.90, rz:0.07, px:-0.28, py: 0.10, sc:1.60, cz:2.90 },  // 4 ZOOM
+  { rx:0.15, ry:5.30, rz:-0.04,px: 0.88, py: 0.48, sc:0.68, cz:4.20 },  // 5 FEATURES
+  { rx:0.10, ry:6.50, rz:0.00, px:-1.10, py:-0.55, sc:0.72, cz:4.00 },  // 6 FINAL
 ]
 
 // ── Tablet keyframes (≤1024px) — less posX swing ─────────────
 const KF_TABLET = [
-  { rx:0.00, ry:0.18, rz:0.00, px: 0.30, py: 0.10, sc:0.95, cz:3.80 },
-  { rx:0.10, ry:2.70, rz:0.05, px:-0.35, py: 0.05, sc:1.05, cz:3.70 },
-  { rx:1.48, ry:0.25, rz:0.00, px: 0.00, py:-0.10, sc:1.10, cz:3.30 },
-  { rx:-0.08,ry:-0.85,rz:-0.04,px: 0.35, py: 0.05, sc:1.05, cz:3.70 },
-  { rx:0.18, ry:3.90, rz:0.06, px:-0.15, py: 0.10, sc:1.45, cz:3.10 },
-  { rx:0.12, ry:5.30, rz:-0.03,px: 0.55, py: 0.45, sc:0.65, cz:4.40 },
-  { rx:0.08, ry:6.50, rz:0.00, px:-0.65, py:-0.40, sc:0.68, cz:4.20 },
+  { rx:0.00, ry:0.18, rz:0.00, px: 0.30, py: 0.10, sc:0.95, cz:3.80 },  // 0 HERO
+  { rx:0.10, ry:2.70, rz:0.05, px:-0.35, py: 0.05, sc:1.05, cz:3.70 },  // 1 HEEL
+  { rx:1.48, ry:0.25, rz:0.00, px: 0.00, py:-0.10, sc:1.10, cz:3.30 },  // 2 SOLE
+  { rx:-0.08,ry:-0.85,rz:-0.04,px:-0.30, py: 0.02, sc:1.45, cz:3.20 },  // 3 FRONT ← left, sc matches scene4
+  { rx:0.18, ry:3.90, rz:0.06, px:-0.15, py: 0.10, sc:1.45, cz:3.10 },  // 4 ZOOM
+  { rx:0.12, ry:5.30, rz:-0.03,px: 0.55, py: 0.45, sc:0.65, cz:4.40 },  // 5 FEATURES
+  { rx:0.08, ry:6.50, rz:0.00, px:-0.65, py:-0.40, sc:0.68, cz:4.20 },  // 6 FINAL
 ]
 
 // ── Mobile keyframes (≤768px) — centred, bottom area ─────────
