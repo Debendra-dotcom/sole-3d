@@ -28,16 +28,30 @@ export default function Contact() {
             fontSize: '0.93rem', fontWeight: 300,
             color: 'rgba(245,243,238,0.42)', lineHeight: 1.7, marginBottom: '3rem',
           }}>
-            Ready to experience footwear engineered for excellence? Visit us in Dallas or reach out —
-            we're here for every step of your journey.
+            Reach out to the SOLE 3D team with questions about our collection. Contact details below are provided for demo purposes only.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="#" className="btn-primary">Shop Collection</a>
             <a href="#" className="btn-ghost">Visit Store →</a>
           </div>
-          <p style={{ marginTop: '3rem', fontSize: '0.7rem', color: 'rgba(245,243,238,0.18)', letterSpacing: '0.15em' }}>
-            Dallas, Texas · +1 559 011 209 10
-          </p>
+          <div className="contact-details">
+            <a className="contact-detail" href="mailto:hello@sole3d.demo">
+              <span className="contact-label">Email</span><span className="contact-value">hello@sole3d.demo</span>
+            </a>
+            <a className="contact-detail" href="tel:+15551234567">
+              <span className="contact-label">Phone</span><span className="contact-value">+1 (555) 123-4567</span>
+            </a>
+            <div className="contact-detail">
+              <span className="contact-label">Address</span><span className="contact-value">123 Fashion Avenue, New York, NY</span>
+            </div>
+            <a className="contact-detail" href="https://www.instagram.com/sole3d/" target="_blank" rel="noreferrer">
+              <span className="contact-label">Instagram</span><span className="contact-value">@sole3d</span>
+            </a>
+            <div className="contact-detail">
+              <span className="contact-label">Working Hours</span><span className="contact-value">Monday–Saturday, 10 AM–7 PM</span>
+            </div>
+          </div>
+          <p className="demo-note">Demo information only. These are not real contact details.</p>
         </div>
       </section>
 
@@ -47,8 +61,18 @@ export default function Contact() {
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         fontSize: '0.7rem', color: 'rgba(245,243,238,0.18)',
       }}>
-        <span>© 2025 The Shoe Company</span>
-        <span>Premium Footwear Since 1998</span>
+        <div className="footer-brand">
+          <span>© 2025 SOLE 3D</span>
+          <span>Luxury Sneakers Since 1998</span>
+          <span className="footer-demo">Demo information only. These are not real contact details.</span>
+        </div>
+        <div className="footer-contact">
+          <a href="mailto:hello@sole3d.demo">hello@sole3d.demo</a>
+          <a href="tel:+15551234567">+1 (555) 123-4567</a>
+          <span>123 Fashion Avenue, New York, NY</span>
+          <a href="https://www.instagram.com/sole3d/" target="_blank" rel="noreferrer">@sole3d</a>
+          <span>Monday–Saturday, 10 AM–7 PM</span>
+        </div>
       </footer>
     </>
   )

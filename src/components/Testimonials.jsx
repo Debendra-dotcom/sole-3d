@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 
 const TESTIMONIALS = [
   {
-    text: '"Looking for shoes built just for you? THE SHOE COMPANY is the way to go. Love the design and build quality."',
+    text: '"Looking for shoes built just for you? SOLE 3D is the way to go. Love the design and build quality."',
     author: 'Marcus T. — Dallas, TX',
   },
   {

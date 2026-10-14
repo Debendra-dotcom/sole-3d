@@ -16,7 +16,7 @@ export default function Nav() {
         fontSize: '1.6rem', letterSpacing: '0.1em',
         color: '#f5f3ee', textDecoration: 'none', position: 'relative',
       }}>
-        THE SHOE CO.
+        SOLE 3D
       </a>
       <ul style={{ display: 'flex', gap: '2.5rem', listStyle: 'none', position: 'relative' }}>
         {['Story', 'Features', 'Reviews', 'Contact'].map((item) => (

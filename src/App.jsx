@@ -8,8 +8,8 @@ const SCENES = [
   {
     id:'sc0', scrollId:'home', align:'l',
     label:'New Collection 2025',
-    title:[<>THE <span className="g">SHOE</span> COMPANY</>],
-    body:'Where precision engineering meets uncompromising style. Every step, perfected.',
+    title:[<>SOLE <span className="g">3D</span></>],
+    body:'Luxury sneakers, precision-engineered. Every step, perfected.',
     cta:true,
   },
   {
@@ -64,7 +64,7 @@ const FEATURES = [
   {icon:'M5 12a7 7 0 1014 0 7 7 0 00-14 0z', title:'Lifetime Support', body:'Free resoling and conditioning for the entire life of the shoe.'},
 ]
 const TESTIS = [
-  {text:'"THE SHOE COMPANY is the way to go. Love the design and build quality."', auth:'Marcus T. — Dallas, TX'},
+  {text:'"SOLE 3D is the way to go. Love the design and build quality."', auth:'Marcus T. — Dallas, TX'},
   {text:'"Worth every single penny. The quality is absolutely unmatched."', auth:'Priya K. — New York, NY'},
   {text:'"Superb fit and comfort. Literally the next level experience."', auth:'James R. — Chicago, IL'},
 ]
@@ -260,7 +260,7 @@ export default function App() {
           duration={1200}
           offset={SCROLL_OFFSET}
         >
-          THE SHOE CO. <span>2025</span>
+          SOLE 3D <span>2025</span>
         </Link>
 
         {/* Desktop nav */}
@@ -306,7 +306,7 @@ export default function App() {
             {l.label}
           </Link>
         ))}
-        <div className="mob-nav-foot">Dallas, TX · +1 559 011 209 10</div>
+        <div className="mob-nav-foot">New York, NY · +1 (555) 123-4567</div>
       </div>
 
       {/* ── 3D Canvas ── */}
@@ -383,10 +383,31 @@ export default function App() {
                   )}
 
                   {sc.contact && (
-                    <div className="p-cta" style={{justifyContent:'center',marginTop:'2rem'}}>
-                      <a className="btn" href="#">Shop Collection</a>
-                      <span className="btn-o">Dallas, TX · +1 559 011 209 10</span>
-                    </div>
+                    <>
+                      <div className="contact-details">
+                        <a className="contact-detail" href="mailto:hello@sole3d.demo">
+                          <span className="contact-label">Email</span>
+                          <span className="contact-value">hello@sole3d.demo</span>
+                        </a>
+                        <a className="contact-detail" href="tel:+15551234567">
+                          <span className="contact-label">Phone</span>
+                          <span className="contact-value">+1 (555) 123-4567</span>
+                        </a>
+                        <div className="contact-detail">
+                          <span className="contact-label">Address</span>
+                          <span className="contact-value">123 Fashion Avenue, New York, NY</span>
+                        </div>
+                        <a className="contact-detail" href="https://www.instagram.com/sole3d/" target="_blank" rel="noreferrer">
+                          <span className="contact-label">Instagram</span>
+                          <span className="contact-value">@sole3d</span>
+                        </a>
+                        <div className="contact-detail">
+                          <span className="contact-label">Working Hours</span>
+                          <span className="contact-value">Monday–Saturday, 10 AM–7 PM</span>
+                        </div>
+                      </div>
+                      <p className="demo-note">Demo information only. These are not real contact details.</p>
+                    </>
                   )}
                 </div>
               </div>
@@ -395,8 +416,18 @@ export default function App() {
         ))}
 
         <footer>
-          <span>© 2025 The Shoe Company</span>
-          <span>Premium Footwear Since 1998</span>
+          <div className="footer-brand">
+            <span>© 2025 SOLE 3D</span>
+            <span>Luxury Sneakers Since 1998</span>
+            <span className="footer-demo">Demo information only. These are not real contact details.</span>
+          </div>
+          <div className="footer-contact">
+            <a href="mailto:hello@sole3d.demo">hello@sole3d.demo</a>
+            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+            <span>123 Fashion Avenue, New York, NY</span>
+            <a href="https://www.instagram.com/sole3d/" target="_blank" rel="noreferrer">@sole3d</a>
+            <span>Monday–Saturday, 10 AM–7 PM</span>
+          </div>
         </footer>
       </div>
     </>

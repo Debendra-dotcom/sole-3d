@@ -31,7 +31,7 @@ export default function Hero() {
           lineHeight: 0.9, color: '#f5f3ee',
         }}
       >
-        THE<br /><span style={{ color: '#c8a96e' }}>SHOE</span><br />COMPANY
+        SOLE<br /><span style={{ color: '#c8a96e' }}>3D</span>
       </motion.h1>
 
       <motion.p
@@ -41,7 +41,7 @@ export default function Hero() {
           color: 'rgba(245,243,238,0.45)', maxWidth: '300px', lineHeight: 1.7,
         }}
       >
-        Where precision engineering meets uncompromising style. Every step, perfected.
+        Luxury sneakers, precision-engineered. Every step, perfected.
       </motion.p>
 
       <motion.div
